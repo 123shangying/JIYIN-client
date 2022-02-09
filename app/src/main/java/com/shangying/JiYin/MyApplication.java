@@ -18,9 +18,9 @@ public class MyApplication<s> extends Application {
     /**
      * 设置全局ip或者域名 s
      */
-    //public static String S_IP="https://sportadmin.shangying.xyz/sportapi/";
-    public static String s="https://sportadmin.shangying.xyz/sportapi/";
-    public static String EMAIL_IP="https://email.shangying.host/email";
+    //public static String S_IP="https://xxxxxxxxxz/sportapi/";
+    public static String s="https://xxxxxxxxxxxx/sportapi/";
+    public static String EMAIL_IP="https://xxxxxxxxxxxxxxx/email";
 //    dev
     public static String S_IP="http://192.168.0.51:8081/sportapi/";
 
