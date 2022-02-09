@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/start"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.About">
+
+    <TextView
+        android:text="@string/about"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+<ImageView
+    android:background="@mipmap/lll"
+    android:layout_gravity="center"
+    android:layout_width="150dp"
+    android:layout_height="150dp"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/versioncode"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#8F181C1C"
+        />
+
+    <TextView
+        android:text="@string/shangying"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#8F181C1C"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="@string/github"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/developer_link_github"
+            android:text="@string/githuburl"
+            android:textColor="#174ad1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#8F181C1C"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="@string/gitee"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/developer_link_gitee"
+            android:text="@string/giteeurl"
+            android:textColor="#174ad1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#8F181C1C"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="@string/blog"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/developer_link_myblog"
+            android:text="@string/blogurl"
+            android:textColor="#174ad1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#8F181C1C"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="@string/host"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/developer_link_onlinetool"
+            android:text="@string/hosturl"
+            android:textColor="#174ad1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#8F181C1C"
+        />
+<LinearLayout
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/copyright_shangying"
+        android:textColor="@color/selection_highlight"
+
+        />
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/selection_highlight"
+        android:text="@string/sr"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+
+        />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="title">@color/title</item>
+        <item name="colorControlNormal">@color/title</item>
+        <item name="colorControlActivated">@color/purple_500</item>
+        <item name="colorControlHighlight">@color/title</item>
+        <item name="android:textColorHint">@color/purple_500</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:background">#fff</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="EditScreenTextInputLayoutStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/title</item>
+        <item name="colorControlActivated">@color/purple_500</item>
+        <item name="colorControlHighlight">@color/title</item>
+        <item name="colorAccent">@color/titleColor</item>
+        <item name="android:textColorHint">@color/purple_500</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/teal_200</item>
+    </style>
+    <!--
+    Base application theme, dependent on API level. This theme is replaced
+    by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+-->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="test" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

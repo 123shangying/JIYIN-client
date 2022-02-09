@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    展示动态的详情信息时，显示评论的内容。属于 ListView 的一个 Item 样式，
+    因为 ListView 的 item 不是完全一样的，这个 ListView 有 2中类型的 item
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!--
+        上面的 descendantFocusability="blocksDescendants" 很重要
+        表示 ListView 中每一个 item 内部的 button或者其他控件的点击事件不会覆盖该 item 的点击事件
+
+        采用 BaseAdapter
+    -->
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/rofile_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/logo"
+    />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/list_item_comment_uname"
+                android:text="JackLin"
+                android:textSize="15sp"
+                android:textColor="@color/my_fontcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/list_item_comment_time"
+                android:text="2021年6月14日10:15:20"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></TextView>
+
+        </LinearLayout>
+        <!--    这里的 id 改了一下名字，和老师的代码不一样-->
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/list_item_comment_content"
+        android:text="
+                 文明发言\n
+提倡社会关爱，摒弃低俗沉迷，促进少年健康成长"
+        android:textSize="16sp"
+        android:textColor="@color/my_fontcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="textStart"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:ignore="RtlCompat" />
+
+
+
+</LinearLayout>

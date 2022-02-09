@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.RunActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="跑步日历"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:background="@color/my_basecolor"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></TextView>
+
+            <!--            <ImageView-->
+            <!--                android:src="@mipmap/icon_three_point"-->
+            <!--                android:layout_gravity="right|center_vertical"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                android:layout_width="30dp"></ImageView>-->
+
+        </FrameLayout>
+
+        <!--    中部显示具体日期    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/run_fragment_year_month_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="xx"
+                android:textColor="#4CAF50"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <!--            <Button-->
+            <!--                android:id="@+id/run_btn_startrun"-->
+            <!--                android:background="@drawable/round_button02"-->
+            <!--                android:layout_toLeftOf="@+id/run_returntoday"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:textColor="#FFf"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                android:text="开始跑步"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"></Button>-->
+
+            <Button
+                android:id="@+id/run_btn_startrun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/round_button"
+                android:text="开始跑步"
+                android:textColor="#4CAF50"/>
+
+
+        </RelativeLayout>
+
+        <!--    显示星期    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textColor="@color/colorRed"
+                android:text="星期日"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:layout_height="match_parent"></TextView>
+
+            <TextView
+                android:text="星期一"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="8sp"
+
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:text="星期二"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:text="星期三"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:text="星期四"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:text="星期五"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:text="星期六"
+                android:textColor="@color/colorRed"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <com.haibin.calendarview.CalendarLayout
+            android:id="@+id/calendarLayout"
+            app:calendar_content_view_id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--
+                关键在这里指定 年视图，月视图，周视图的路径
+                app:year_view="xxxx"
+                app:month_view="xxxx"
+                app:week_view="xxxx"
+            -->
+            <com.haibin.calendarview.CalendarView
+                android:id="@+id/calendarView"
+                app:month_view="com.shangying.JiYin.MyWidget.Calander.CustomMonthView"
+                app:week_view="com.shangying.JiYin.MyWidget.Calander.CustomWeekView"
+                app:year_view="com.shangying.JiYin.MyWidget.Calander.CustomYearView"
+                app:week_bar_height="0dp"
+                app:calendar_padding="10dp"
+                app:current_month_lunar_text_color="#cfcfcf"
+                app:current_month_text_color="#fff"
+                app:max_year="2030"
+                app:min_year="2010"
+                app:month_view_show_mode="mode_fix"
+                app:other_month_lunar_text_color="#e1e1e1"
+                app:other_month_text_color="#e1e1e1"
+                app:scheme_text_color="#fff"
+                app:scheme_theme_color="@color/my_basecolor"
+                app:selected_lunar_text_color="#fff"
+                app:selected_text_color="#fff"
+                app:selected_theme_color="@color/my_basecolor"
+                app:week_background="@color/white"
+                app:week_start_with="sun"
+                app:week_text_color="#fff"
+                app:year_view_day_text_color="#fff"
+                app:year_view_day_text_size="7sp"
+                app:year_view_month_text_color="#FF0000"
+                app:year_view_month_text_size="20sp"
+                app:year_view_scheme_color="#FFCF3A"
+                app:year_view_select_text_color="#fff"
+                app:year_view_week_height="12dp"
+                app:year_view_week_text_color="#e1e1e1"
+                app:year_view_week_text_size="6sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fcfcfc" />
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/run_fragment_year_month_day_2"
+                        android:text="运动记录 2021年6月17日"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="20px"
+                        android:textColor="#1B1A1A"
+                        android:textSize="14sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/run_recycleview"
+                        android:scrollbars="vertical"
+                        android:textColor="#1B1A1A"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </com.haibin.calendarview.CalendarLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">迹印</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="android_auto_update_dialog_title">发现新版本</string>
+    <string name="android_auto_update_notify_ticker">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_notify_content">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_dialog_btn_download">立即下载</string>
+    <string name="android_auto_update_dialog_btn_cancel">以后再说</string>
+    <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+    <string name="android_auto_update_dialog_checking">正在检查版本</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">广场</string>
+    <string name="title_notifications">我的</string>
+    <string name="weather">天气</string>
+    <string name="music">音乐</string>
+    <string name="history">\n\n\n记录</string>
+    <string name="tips">\n\n\n节拍</string>
+    <string name="run">\nGO</string>
+    <string name="about">关于</string>
+    <string name="shangying">开发者：shangying</string>
+    <string name="github">GitHub主页:</string>
+    <string name="githuburl">https://github.com/123shangying</string>
+    <string name="gitee">码云主页:</string>
+    <string name="giteeurl">https://gitee.com/shangyingwx</string>
+    <string name="blog">个人博客地址:</string>
+    <string name="blogurl">https://shangying.host</string>
+    <string name="host">本软件开源地址:</string>
+    <string name="hosturl">https://gitee.com/shangyingwx/jiyin</string>
+    <string name="copyright_shangying">Copyright © shangying版权所有</string>
+    <string name="sr">软件著作权登记证号:2021SR0534472</string>
+    <string name="ysxy">《隐私协议》</string>
+    <string name="yhxy">《用户协议》</string>
+    <string name="xy">请仔细阅读并确认《用户协议》及《隐私协议》,注册即代表您同意下述协议。</string>
+    <!--    发布动态时的下列选项  -->
+    <string-array name="data">
+        <item>公开</item>
+        <item>私密</item>
+
+    </string-array>
+</resources>

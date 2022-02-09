@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    tools:context=".ui.fragment.dashboard.DashboardFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--    顶部导航条   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tuijian"
+                android:background="@mipmap/anniu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="推荐"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/me"
+                android:background="@mipmap/anniu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="我的"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/community_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <!--    悬浮按钮    -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/community_float_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="80dp"
+        android:backgroundTint="#7157f6"
+        android:src="@mipmap/icon_add_01" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amap.api:3dmap:7.8.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.1.1-all/caches/modules-2/files-2.1/com.amap.api/3dmap/7.8.0/916cc17841799b9fa825c71cdade16b4d8ce9cdd/3dmap-7.8.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/3dmap/7.8.0/916cc17841799b9fa825c71cdade16b4d8ce9cdd/3dmap-7.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.1.1-all/caches/modules-2/files-2.1/com.amap.api/3dmap/7.8.0/866b448e35caf66fd22899770108d120a8a0dc3/3dmap-7.8.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/3dmap/7.8.0/866b448e35caf66fd22899770108d120a8a0dc3/3dmap-7.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.1.1-all/caches/modules-2/files-2.1/com.amap.api/3dmap/7.8.0/866b448e35caf66fd22899770108d120a8a0dc3/3dmap-7.8.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/3dmap/7.8.0/866b448e35caf66fd22899770108d120a8a0dc3/3dmap-7.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

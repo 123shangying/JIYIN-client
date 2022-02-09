@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ui.maps.Run.RunResultActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="跑步轨迹"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@color/my_basecolor"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:id="@+id/run_result_menu"
+            android:src="@mipmap/icon_three_point"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_height="30dp"
+            android:layout_width="30dp"/>
+
+    </FrameLayout>
+
+
+    <RadioGroup
+        android:id="@+id/run_result_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D8D8D8"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/run_result_rb_path"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_community"
+            android:text="轨迹" />
+
+        <TextView
+            android:background="#cfcfcf"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/run_result_rb_detail"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_run"
+            android:text="详情" />
+
+
+    </RadioGroup>
+
+    <com.shangying.JiYin.MyWidget.MyAMapScrollViewPager
+        android:id="@+id/run_result_ampviewpager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+
+
+</LinearLayout>

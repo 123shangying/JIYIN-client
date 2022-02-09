@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/start"
+    android:orientation="vertical"
+    tools:context="ui.fragment.dashboard.DynamicHistoryActivity">
+
+    <TextView
+        android:text="我的动态"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@color/my_basecolor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dynamic_history_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

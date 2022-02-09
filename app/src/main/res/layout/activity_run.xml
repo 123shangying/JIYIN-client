@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.maps.Run.RunActivity">
+
+    <!--
+        MapView 是 AndroidView 类的一个子类， 用于在 Android View 中放置地图。
+        MapView 是地图容器。用 MapView 加载地图的方法与 Android 提供的其他 View 一样
+        在项目中使用地图的时候需要注意，需要合理的管理地图生命周期
+    -->
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps.MapView>
+
+    <!--    蒙版效果    -->
+<!--    <TextView-->
+<!--        android:background="@drawable/gradient"-->
+<!--        android:alpha="0.5"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"></TextView>-->
+
+    <ImageView
+        android:id="@+id/run_iv_music"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0.8"
+        android:src="@mipmap/icon_music_skateboard" />
+
+    <TextView
+        android:id="@+id/run_map_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:alpha="0.6"
+        android:text="00:28"
+        android:textColor="#10E419"
+        android:textSize="70sp" />
+
+    <Button
+        android:id="@+id/run_map_finish"
+        android:text="完成"
+        android:alpha="0.5"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/run_map_pause"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_button_green"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/image_head" />
+
+    <Button
+        android:id="@+id/run_map_pause"
+        android:text="暂停"
+        android:alpha="0.7"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/round_button_red"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/image_head" />
+
+    <Button
+        android:id="@+id/run_map_continue"
+        android:text="继续跑步"
+        android:alpha="0.7"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/run_map_pause"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/round_button_green"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/image_head" />
+
+</RelativeLayout>

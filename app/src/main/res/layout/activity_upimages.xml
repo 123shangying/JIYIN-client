@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/share_send1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_button02"
+            android:gravity="center"
+            android:text="发布"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+    <!--
+        存放图片的 LinearLayout，需要用 Java 代码动态的添加图片进去
+        共有2个布局，每个布局最多放4张图片
+    -->
+    <LinearLayout
+        android:id="@+id/share_layout_01"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_layout_02"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--    相机按钮，图库按钮   -->
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/share_camera"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/icon_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:id="@+id/share_album"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/icon_album"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/share_send2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_button02"
+        android:gravity="center"
+        android:text="发布"
+        android:textAlignment="center"
+        android:textColor="#fff" />
+
+</LinearLayout>

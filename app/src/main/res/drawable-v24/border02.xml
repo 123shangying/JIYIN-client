@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    只有底部的边框  -->
+    <!-- This is the main color -->
+    <item  android:left="25dp" android:right="25dp" >
+        <shape>
+            <solid android:color="#001292d0" />
+        </shape>
+    </item>
+    <!-- This is the line -->
+    <item android:bottom="3dp">
+        <shape >
+            <solid android:color="@color/my_basecolor" />
+        </shape>
+
+    </item>
+
+</layer-list>

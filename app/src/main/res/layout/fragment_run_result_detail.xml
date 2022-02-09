@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.maps.RunResult.RunResultFragmentMap">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/run_result_detail_distance"
+            android:text="运动距离："
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/run_result_detail_continuetime"
+            android:text="运动时长"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/run_result_detail_begintime"
+            android:text="开始时间"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/run_result_detail_endtime"
+            android:text="结束时间"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+        <TextView
+            android:id="@+id/run_result_detail_speed1"
+            android:text="平均时速"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/run_result_detail_speed2"
+            android:text="平均配速"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

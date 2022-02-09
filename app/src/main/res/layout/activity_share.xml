@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/start"
+    android:orientation="vertical"
+    tools:context="ui.fragment.dashboard.ShareActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/share_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/icon_back_02"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="新动态"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/share_send"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_button02"
+            android:gravity="center"
+            android:text="发布"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/share_et_title"
+        android:layout_width="match_parent"
+        android:hint="写标题更有可能被推荐"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/share_et_content"
+        android:hint="分享你的跑步心得和经验吧"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:scrollbars="vertical"/>
+
+
+
+
+    <!--
+        存放图片的 LinearLayout，需要用 Java 代码动态的添加图片进去
+        共有2个布局，每个布局最多放4张图片
+    -->
+    <LinearLayout
+        android:id="@+id/share_layout_01"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <!--  Spinner通过 entries 设置数据源-->
+    <Spinner
+        android:id="@+id/share_spinner"
+        android:entries="@array/data"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:spinnerMode="dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </Spinner>
+
+</LinearLayout>

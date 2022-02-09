@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/start"
+    android:orientation="vertical" >
+    <RelativeLayout
+
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="修改密码"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+        <EditText
+            android:layout_marginTop="150dp"
+            android:id="@+id/passwordold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_email_white_24dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="原密码"
+            android:inputType="textEmailAddress"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/passwordnew"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_email_white_24dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="新密码"
+            android:inputType="textEmailAddress"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+             />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/passwordnew_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_email_white_24dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="确认密码"
+            android:inputType="textEmailAddress"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+             />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#96ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/pwd_but"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/buttonshapewhitebg"
+                android:fontFamily="@font/calibri"
+                android:text="确定"
+                android:textAllCaps="false"
+                android:textColor="#EB5151"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

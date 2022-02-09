@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    展示动态的 ListView 的 item 样式-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!--
+        上面的 descendantFocusability="blocksDescendants" 很重要
+        表示 ListView 中每一个 item 内部的 button或者其他控件的点击事件不会覆盖该 item 的点击事件
+
+        采用 BaseAdapter
+    -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+      />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dynamic_history_uname"
+                android:text="JackLin"
+                android:textSize="15sp"
+                android:textColor="@color/my_fontcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/dynamic_history_time"
+                android:text="2021年6月14日10:15:20"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></TextView>
+
+        </LinearLayout>
+        <!--    这里的 id 改了一下名字，和老师的代码不一样-->
+
+
+        <Button
+            android:id="@+id/dynamic_history_btn_delete"
+            android:text="删除"
+            android:textColor="#fff"
+            android:background="@drawable/round_button_red"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_width="70dp"
+            android:layout_height="30dp"></Button>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dynamic_history_title"
+        android:text="一个月练出腹肌不是梦!!!"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/my_fontcolor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="textStart"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:ignore="RtlCompat" />
+    <TextView
+        android:id="@+id/dynamic_history_content"
+        android:text="首先回答一个问题哈，有的朋友问我，马老师，一个月练出腹肌..."
+        android:textSize="16sp"
+        android:textColor="@color/my_fontcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="textStart"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:id="@+id/community_layout_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/community_layout_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+
+    <!--    分割线 -->
+    <TextView
+        android:background="#f4f4f4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></TextView>
+
+
+
+    <TextView
+        android:background="#dbdbdb"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"></TextView>
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shangying.JiYin">
+
+    <uses-sdk />
+    <!-- 开启网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- GPS -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 额外的定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- &lt;!&ndash;    震动（发送通知时用到）&ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 前台服务 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Tell the system this app requires OpenGL ES 3.1. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- &lt;!&ndash;    震动（发送通知时用到）&ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 前台服务 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- &lt;!&ndash;    震动（发送通知时用到）&ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 前台服务 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Tell the system this app requires OpenGL ES 3.1. -->
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/EditScreenTextInputLayoutStyle"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.RunActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".function.Deweb"
+            android:exported="true" />
+        <activity
+            android:name=".function.DelectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".function.Upimages"
+            android:exported="true" />
+        <activity
+            android:name=".function.Webviewxy"
+            android:exported="true" />
+        <activity
+            android:name=".function.Webview"
+            android:exported="true" />
+        <activity
+            android:name=".ui.About"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Showdata"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Weather"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".ui.IndexActivity" />
+        <activity android:name=".ui.TabActivity" />
+        <activity android:name=".ui.EmailLoginActivity" />
+        <activity android:name=".ui.FindswActivity" />
+        <activity android:name=".ui.RegstActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.maps.Run.RunActivity" />
+        <activity android:name=".ui.fragment.dashboard.ShareActivity" />
+        <activity android:name=".ui.fragment.dashboard.DynamicDetailActivity" />
+        <activity android:name=".ui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Update.DownloadService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6076a5f4d2836483e221cf52a0b80666" /> <!-- 配置一下 key -->
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service
+            android:name=".Service.MyService"
+            android:enabled="true"
+            android:exported="true" /> <!-- 广播接收器，用来实现 RunActivity 和 MyService 之间的通信 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <provider
+            android:name=".Update.UpdateApkFileProvider"
+            android:authorities="${applicationId}.update.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_apk_paths" />
+        </provider>
+    </application>
+
+</manifest>

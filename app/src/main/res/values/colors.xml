@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#D178F96E</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="textInputLayout">#96ffffff</color>
+    <color name="titleBarBackgroundColor">#0007F87E</color>
+    <color name="titleColor">#DDFF0051</color>
+    <color name="title">#DDFF0051</color>
+
+
+        <color name="white2">#f5f3f3</color>
+        <color name="colorRed">#d50f09</color>
+    <!--主色调-->
+    <color name="my_basecolor">#41ED48</color>
+    <color name="my_basecolo">#41ED48</color>
+    <color name="my_basecolorr">#1292d0</color>
+    <color name="my_fontcolor">#222222</color>
+
+
+    <color name="my_background">#F1F1F1</color>
+
+
+    <color name="selection_highlight">#aaaaaa</color>
+    <color name="selection_focus">#eeaa55</color>
+    <color name="item_normal">#eeeeee</color>
+
+</resources>
